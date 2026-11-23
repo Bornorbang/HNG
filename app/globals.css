@@ -225,3 +225,9 @@ main section[id] { scroll-margin-top:90px; }
 .article-hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.8fr);align-items:center;gap:48px}.article-hero-visual img{display:block;width:100%;height:auto;object-fit:contain}.article-hero-visual{max-width:420px;justify-self:end}@media(max-width:800px){.article-hero-grid{grid-template-columns:1fr;gap:25px}.article-hero-visual{justify-self:start;max-width:340px}}
 
 .blog-hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);align-items:center;gap:48px}.blog-hero-visual img{display:block;width:100%;height:auto;object-fit:contain}.blog-hero-visual{max-width:500px;justify-self:end}@media(max-width:800px){.blog-hero-grid{grid-template-columns:1fr;gap:24px}.blog-hero-visual{justify-self:start;max-width:400px}}
+
+@media(max-width:650px){.homepage-hero h1 .hero-break{display:inline}.homepage-hero h1 .hero-first-line,.homepage-hero h1 .hero-thrust{white-space:nowrap}.homepage-hero h1{font-size:clamp(20px,7vw,36px)}.wh-hero h1,.blog-hero h1,.article-hero h1,.legal-hero h1{overflow-wrap:anywhere}}
+
+@media(max-width:650px){.blog-hero h1{font-size:30px}.article-hero h1{font-size:28px}}
+
+@media(max-width:650px){.whois-page .wh-hero .wh-actions{display:flex;flex-wrap:nowrap;gap:8px}.whois-page .wh-hero .wh-actions .button{flex:1;min-width:0;padding-inline:7px;gap:5px;font-size:clamp(10px,3vw,13px);white-space:nowrap}.whois-page .wh-hero .wh-actions .button svg{flex-shrink:0}}

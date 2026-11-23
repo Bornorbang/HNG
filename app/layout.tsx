@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Inter, Playfair_Display } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ScrollMotion } from "@/components/scroll-motion";
+import { MobileHeadingFit } from "@/components/mobile-heading-fit";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en-US" suppressHydrationWarning><body className={`${inter.variable} ${playfair.variable}`}><ThemeProvider>{children}<ScrollMotion/></ThemeProvider><Script id="tawk-to" strategy="afterInteractive">{`var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  return <html lang="en-US" suppressHydrationWarning><body className={`${inter.variable} ${playfair.variable}`}><ThemeProvider>{children}<ScrollMotion/><MobileHeadingFit/></ThemeProvider><Script id="tawk-to" strategy="afterInteractive">{`var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function() {
   var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
   s1.async = true;
