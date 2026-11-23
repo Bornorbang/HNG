@@ -1,0 +1,2 @@
+﻿import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+export function LegalPage({ title, intro, html }: { title: string; intro: string; html: string }) { return <><SiteHeader/><main><section className="legal-hero"><div className="wrap"><span className="wh-eyebrow"><span/> HOSTING NIGERIA</span><h1>{title}</h1><p>{intro}</p></div></section><section className="section"><article className="wrap legal-content" dangerouslySetInnerHTML={{ __html: html }}/></section></main><SiteFooter/></>; }
